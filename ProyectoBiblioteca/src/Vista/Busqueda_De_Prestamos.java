@@ -4,7 +4,7 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 
-public class Busqueda_Biblioteca {
+public class Busqueda_De_Prestamos {
 
 	private JFrame frame;
 
@@ -15,7 +15,7 @@ public class Busqueda_Biblioteca {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Busqueda_Biblioteca window = new Busqueda_Biblioteca();
+					Busqueda_De_Prestamos window = new Busqueda_De_Prestamos();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -27,7 +27,7 @@ public class Busqueda_Biblioteca {
 	/**
 	 * Create the application.
 	 */
-	public Busqueda_Biblioteca() {
+	public Busqueda_De_Prestamos() {
 		initialize();
 	}
 
