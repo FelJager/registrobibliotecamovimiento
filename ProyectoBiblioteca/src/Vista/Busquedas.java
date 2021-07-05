@@ -62,7 +62,6 @@ public class Busquedas {
 		frmBibliotecaUtp.getContentPane().setBackground(new Color(255, 255, 255));
 		frmBibliotecaUtp.getContentPane().setEnabled(false);
 		frmBibliotecaUtp.setTitle("Biblioteca UTP");
-		frmBibliotecaUtp.setResizable(false);
 		frmBibliotecaUtp.setBounds(100, 100, 765, 510);
 		frmBibliotecaUtp.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmBibliotecaUtp.getContentPane().setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
