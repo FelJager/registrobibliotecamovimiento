@@ -6,5 +6,6 @@
 		<nombres></nombres>
 		<apellidos></apellidos>
 		<carrera></carrera>
+		<sucursal></sucursal>
 	</Usuario_Biblioteca>
 </Usuarios>

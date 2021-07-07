@@ -10,5 +10,6 @@
 		<fecha_publicacion></fecha_publicacion>
 		<numero_paginas></numero_paginas>
 		<detalle_publicacion></detalle_publicacion>
+		<biblioteca></biblioteca>
 	</material_detalles>
 </material>
