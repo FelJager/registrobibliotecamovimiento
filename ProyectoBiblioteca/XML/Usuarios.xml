@@ -2,7 +2,8 @@
 
 <Usuarios>
 	<Usuario_Biblioteca>
-		<codigo_alumno></codigo_alumno>
+		<codigo_usuario></codigo_usuario>
+		<tipo_usuario></tipo_usuario>
 		<nombres></nombres>
 		<apellidos></apellidos>
 		<carrera></carrera>
