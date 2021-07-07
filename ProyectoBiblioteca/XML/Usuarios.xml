@@ -5,6 +5,6 @@
 		<codigo_alumno></codigo_alumno>
 		<nombres></nombres>
 		<apellidos></apellidos>
-		<Carrera></Carrera>
+		<carrera></carrera>
 	</Usuario_Biblioteca>
 </Usuarios>
