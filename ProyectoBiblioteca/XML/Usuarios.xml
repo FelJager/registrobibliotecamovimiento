@@ -2,6 +2,9 @@
 
 <Usuarios>
 	<Usuario_Biblioteca>
-	
+		<codigo_alumno></codigo_alumno>
+		<nombres></nombres>
+		<apellidos></apellidos>
+		<Carrera></Carrera>
 	</Usuario_Biblioteca>
 </Usuarios>

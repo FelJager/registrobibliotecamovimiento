@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <material>
-	
+	<material_detalles>
+		<codigo></codigo>
+		<titulo></titulo>
+		<autores></autores>
+		<tipo_recurso></tipo_recurso>
+		<editorial></editorial>
+		<fecha_publicacion></fecha_publicacion>
+		<numero_paginas></numero_paginas>
+		<detalle_publicacion></detalle_publicacion>
+	</material_detalles>
 </material>

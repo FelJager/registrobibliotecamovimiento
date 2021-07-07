@@ -2,6 +2,8 @@
 
 <RegistroMovimientos>
 	<Movimiento_Biblioteca>
-	
+		<codigo_libro></codigo_libro>
+		<codigo_usuario></codigo_usuario>
+		<fecha_prestamo></fecha_prestamo>
 	</Movimiento_Biblioteca>
 </RegistroMovimientos>
