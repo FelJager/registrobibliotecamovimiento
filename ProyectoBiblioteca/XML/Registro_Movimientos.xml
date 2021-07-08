@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<RegistroMovimientos>
+<Registro_Movimientos>
 	<Movimiento_Biblioteca>
-		<codigo_libro></codigo_libro>
+		<codigo_material></codigo_material>
 		<codigo_usuario></codigo_usuario>
 		<fecha_prestamo></fecha_prestamo>
 	</Movimiento_Biblioteca>
-</RegistroMovimientos>
+</Registro_Movimientos>
