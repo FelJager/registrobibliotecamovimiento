@@ -7,7 +7,7 @@ public class modelo_Usuario {
 	String apellidos;
 	String carrera;
 	String sucursal;
-	public modelo_Usuario(int codigo_usuario, String tipo_usuario, String nombres, String apellidos, String carrera){
+	public modelo_Usuario(int codigo_usuario, String tipo_usuario, String nombres, String apellidos, String carrera, String sucursal) {
 		this.codigo_usuario = codigo_usuario;
 		this.tipo_usuario = tipo_usuario;
 		this.nombres = nombres;
@@ -51,7 +51,8 @@ public class modelo_Usuario {
 	public void setSucursal(String sucursal) {
 		this.sucursal = sucursal;
 	}
-		
+	
+	
 	
 	
 }

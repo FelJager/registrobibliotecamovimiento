@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<material>
-	<material_detalles>
-		<codigo></codigo>
-		<titulo></titulo>
-		<autores></autores>
-		<tipo_recurso></tipo_recurso>
-		<editorial></editorial>
-		<fecha_publicacion></fecha_publicacion>
-		<numero_paginas></numero_paginas>
-		<detalle_publicacion></detalle_publicacion>
-		<biblioteca></biblioteca>
-	</material_detalles>
-</material>
+<data>
+	<material>
+		<material_detalles codigo_material="000001" titulo="Introduccion a los algoritmos" autores="[Ronald Rivers, Charles E. Leiserson,  Ronald L. Rivest]" tipo_recurso="Libro" editorial="MIT Press" fecha_publicacion="1989" numero_paginas="1312" detalle_publicacion="Introduccion a los algoritmos..." imagen="Recursos/41VndKVtiXL._SX258_BO1,204,203,200_.jpg" biblioteca="[Lima, Arequipa]"/>
+	</material>
+</data>
