@@ -4,16 +4,16 @@ import java.util.Date;
 
 public class modelo_Material {
 	
-	int codigo_material;
-	String titulo;
-	String [] autores;
-	String tipo_recurso;
-	String editorial;
-	Date fecha_publicacion;
-	int numero_paginas;
-	String detalle_publicacion;
-	String imagen;
-	String[] biblioteca;
+	private int codigo_material;
+	private String titulo;
+	private String [] autores;
+	private String tipo_recurso;
+	private String editorial;
+	private Date fecha_publicacion;
+	private int numero_paginas;
+	private String detalle_publicacion;
+	private String imagen;
+	private String[] biblioteca;
 	public modelo_Material(int codigo_material, String titulo, String[] autores, String tipo_recurso, String editorial, Date fecha_publicacion, int numero_paginas, String detalle_publicacion, String imagen, String[] biblioteca) {
 		this.codigo_material = codigo_material;
 		this.titulo = titulo;

@@ -3,9 +3,10 @@ package Modelo;
 import java.util.Date;
 
 public class modelo_RegistroMovimientos {
-	int codigo_material;
-	int codigo_usuario;
-	Date fecha_prestamo;
+	private int codigo_material;
+	private int codigo_usuario;
+	private Date fecha_prestamo;
+	
 	public modelo_RegistroMovimientos(int codigo_material, int codigo_usuario, Date fecha_prestamo) {
 		this.codigo_material = codigo_material;
 		this.codigo_usuario = codigo_usuario;

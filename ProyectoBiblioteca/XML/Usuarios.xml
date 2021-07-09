@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data>
-
-	<Usuarios>
-		<Usuario_Biblioteca codigo_usuario="17458" nombres="Luis" apellidos="chavez ruiz" carrera="Ingenieria de Sistemas" sucursal="Arequipa"/>
-	</Usuarios>
-
-</data>
+<Usuarios>
+	<Usuario_Biblioteca codigo_usuario="17458" tipo_usuario="Administrador" nombres="Luis" apellidos="chavez ruiz" carrera="Ingenieria de Sistemas" sucursal="Arequipa"/>
+</Usuarios>

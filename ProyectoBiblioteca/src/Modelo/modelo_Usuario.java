@@ -1,12 +1,12 @@
 package Modelo;
 
 public class modelo_Usuario {
-	int codigo_usuario;
-	String tipo_usuario;
-	String nombres;
-	String apellidos;
-	String carrera;
-	String sucursal;
+	private int codigo_usuario;
+	private String tipo_usuario;
+	private String nombres;
+	private String apellidos;
+	private String carrera;
+	private String sucursal;
 	public modelo_Usuario(int codigo_usuario, String tipo_usuario, String nombres, String apellidos, String carrera, String sucursal) {
 		this.codigo_usuario = codigo_usuario;
 		this.tipo_usuario = tipo_usuario;
