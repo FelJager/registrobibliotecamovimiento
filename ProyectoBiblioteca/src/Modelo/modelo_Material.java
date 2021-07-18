@@ -6,15 +6,15 @@ public class modelo_Material {
 	
 	private int codigo_material;
 	private String titulo;
-	private String [] autores;
+	private String autores;
 	private String tipo_recurso;
 	private String editorial;
 	private Date fecha_publicacion;
 	private int numero_paginas;
 	private String detalle_publicacion;
 	private String imagen;
-	private String[] biblioteca;
-	public modelo_Material(int codigo_material, String titulo, String[] autores, String tipo_recurso, String editorial, Date fecha_publicacion, int numero_paginas, String detalle_publicacion, String imagen, String[] biblioteca) {
+	private String biblioteca;
+	public modelo_Material(int codigo_material, String titulo, String autores, String tipo_recurso, String editorial, Date fecha_publicacion, int numero_paginas, String detalle_publicacion, String imagen, String biblioteca) {
 		this.codigo_material = codigo_material;
 		this.titulo = titulo;
 		this.autores = autores;
@@ -38,10 +38,10 @@ public class modelo_Material {
 	public void setTitulo(String titulo) {
 		this.titulo = titulo;
 	}
-	public String[] getAutores() {
+	public String getAutores() {
 		return autores;
 	}
-	public void setAutores(String[] autores) {
+	public void setAutores(String autores) {
 		this.autores = autores;
 	}
 	public String getTipo_recurso() {
@@ -80,10 +80,10 @@ public class modelo_Material {
 	public void setImagen(String imagen) {
 		this.imagen = imagen;
 	}
-	public String[] getBiblioteca() {
+	public String getBiblioteca() {
 		return biblioteca;
 	}
-	public void setBiblioteca(String[] biblioteca) {
+	public void setBiblioteca(String biblioteca) {
 		this.biblioteca = biblioteca;
 	}
 	

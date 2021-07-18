@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Registro_Movimientos>
-	<Movimiento_Biblioteca codigo_material="000001" codigo_usuario="17458" fecha_prestamo="18-05-2020" />
+	<Movimiento_Biblioteca 
+	codigo_material="000001" 
+	codigo_usuario="17458" 
+	fecha_prestamo="18-05-2020" />
 </Registro_Movimientos>

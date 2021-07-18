@@ -31,7 +31,5 @@ public class modelo_RegistroMovimientos {
 		this.fecha_prestamo = fecha_prestamo;
 	}
 	
-	
-	
 }
 
