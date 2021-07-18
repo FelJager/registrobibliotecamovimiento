@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Usuarios>
-	<Usuario_Biblioteca 
-	codigo_usuario="17458" 
-	tipo_usuario="Administrador" 
-	nombres="Luis" 
-	apellidos="chavez ruiz" 
-	carrera="Ingenieria de Sistemas" 
-	sucursal="Arequipa"/>
+	<Usuario_Biblioteca codigo_usuario="17458">
+		<tipo_usuario>Administrador</tipo_usuario>
+		<nombres_usuario>Luis</nombres_usuario>
+		<apellidos_usuario>Chavez Ruiz</apellidos_usuario>
+		<carrera_usuario>Ingenieria de Sistemas</carrera_usuario>
+		<sucursal_usuario>Arequipa</sucursal_usuario>
+	</Usuario_Biblioteca> 
 </Usuarios>
