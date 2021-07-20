@@ -6,8 +6,8 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.JLayeredPane;
 import java.awt.Window.Type;
-import javax.swing.JDesktopPane;
 import java.awt.Color;
 import javax.swing.JLabel;
 import java.awt.Font;
@@ -15,15 +15,16 @@ import javax.swing.JComboBox;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.JButton;
-import javax.swing.DefaultComboBoxModel;
 import javax.swing.JTable;
-import javax.swing.table.DefaultTableModel;
+import javax.swing.JDesktopPane;
+import java.awt.ScrollPane;
+import javax.swing.DefaultComboBoxModel;
 
-public class busqueda_Registro extends JFrame {
+public class BusquedaLibro extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField textField;
-	private JTable table;
+	private JTable datosMaterial;
 
 	/**
 	 * Launch the application.
@@ -32,7 +33,7 @@ public class busqueda_Registro extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					busqueda_Registro frame = new busqueda_Registro();
+					BusquedaLibro frame = new BusquedaLibro();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -44,23 +45,23 @@ public class busqueda_Registro extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public busqueda_Registro() {
+	public BusquedaLibro() {
+		setResizable(false);
 		setType(Type.UTILITY);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 743, 575);
+		setBounds(100, 100, 789, 485);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
 		
-		JDesktopPane desktopPane = new JDesktopPane();
-		desktopPane.setBackground(new Color(255, 255, 255));
-		contentPane.add(desktopPane, BorderLayout.CENTER);
+		JLayeredPane layeredPane = new JLayeredPane();
+		contentPane.add(layeredPane, BorderLayout.CENTER);
 		
 		JPanel panel = new JPanel();
 		panel.setBackground(new Color(139, 0, 0));
-		panel.setBounds(0, 0, 717, 41);
-		desktopPane.add(panel);
+		panel.setBounds(0, 0, 773, 41);
+		layeredPane.add(panel);
 		
 		JLabel lblNewLabel_1_1 = new JLabel("BIBLIOTECA");
 		lblNewLabel_1_1.setForeground(Color.WHITE);
@@ -68,7 +69,7 @@ public class busqueda_Registro extends JFrame {
 		panel.add(lblNewLabel_1_1);
 		
 		JComboBox comboBox_1_1 = new JComboBox();
-		comboBox_1_1.setModel(new DefaultComboBoxModel(new String[] {"Elige Biblioteca", "LIMA", "AREQUIPA"}));
+		comboBox_1_1.setModel(new DefaultComboBoxModel(new String[] {"Elegir Locacion", "Lima", "Arequipa"}));
 		panel.add(comboBox_1_1);
 		
 		JLabel lblNewLabel_1 = new JLabel("TIPO DE RECURSO");
@@ -77,7 +78,7 @@ public class busqueda_Registro extends JFrame {
 		panel.add(lblNewLabel_1);
 		
 		JComboBox comboBox_1 = new JComboBox();
-		comboBox_1.setModel(new DefaultComboBoxModel(new String[] {"Elige el tipo de material", "LIBRO", "REVISTA", "INFORME"}));
+		comboBox_1.setModel(new DefaultComboBoxModel(new String[] {"Elegir Tipo", "Libro", "Revista", "Informe"}));
 		panel.add(comboBox_1);
 		
 		textField = new JTextField();
@@ -90,16 +91,12 @@ public class busqueda_Registro extends JFrame {
 		btn_BuscarParametros.setHorizontalAlignment(SwingConstants.LEADING);
 		panel.add(btn_BuscarParametros);
 		
-		table = new JTable();
-		table.setModel(new DefaultTableModel(
-			new Object[][] {
-			},
-			new String[] {
-				"Codigo_Material", "Codigo_Usuario", "Fecha_Prestamo", "Fecha_Devolucion"
-			}
-		));
-		table.setBounds(88, 108, 1, 1);
-		desktopPane.add(table);
+		ScrollPane scrollPane = new ScrollPane();
+		scrollPane.setBounds(64, 102, 637, 238);
+		layeredPane.add(scrollPane);
+		
+		datosMaterial = new JTable();
+		datosMaterial.setBounds(694, 102, -624, 238);
+		layeredPane.add(datosMaterial);
 	}
-
 }
