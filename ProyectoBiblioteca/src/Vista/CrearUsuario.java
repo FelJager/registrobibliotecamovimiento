@@ -98,6 +98,14 @@ public class CrearUsuario extends JFrame {
 		
 		
 		JButton btnRegresar = new JButton("RegresarLogin");
+		btnRegresar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Login login = new Login();
+				login.setVisible(true);
+				crear.setVisible(false);
+				crear.dispose();
+			}
+		});
 		btnRegresar.setForeground(new Color(255, 0, 0));
 		btnRegresar.setFont(new Font("Tahoma", Font.BOLD, 13));
 		btnRegresar.setBounds(48, 230, 146, 23);

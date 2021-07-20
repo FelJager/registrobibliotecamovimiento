@@ -6,13 +6,23 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import org.jdom2.JDOMException;
+
 import javax.swing.JLayeredPane;
 import javax.swing.JLabel;
 import java.awt.Font;
 import java.awt.Color;
 import javax.swing.JTextField;
 import com.toedter.calendar.JDateChooser;
+
+import Controlador.CreadorRegistro;
+import Modelo.Modelo_Registro_Moviminentos;
+
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.awt.event.ActionEvent;
 
 public class RegistroPedido extends JFrame {
 
@@ -21,6 +31,17 @@ public class RegistroPedido extends JFrame {
 	private JTextField tfUsuario;
 	private JTextField tfLibro;
 	private JTextField tfDescripcion;
+	private JFrame pedido;
+	
+	private int codigo_registro;
+	private String codig_material;
+	private String codigo_usuario;
+	private String fecha_prestamo;
+	private String fecha_devolucion;
+	private String dia;
+	private String mes;
+	private String anio;
+	
 
 	/**
 	 * Launch the application.
@@ -116,6 +137,14 @@ public class RegistroPedido extends JFrame {
 		layeredPane.add(lblNewLabel_2_1);
 		
 		JButton btnCancelar = new JButton("Cancelar");
+		btnCancelar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				BusquedaLibro busquedalibro = new BusquedaLibro();
+				busquedalibro.setVisible(true);
+				pedido.setVisible(false);
+				pedido.dispose();
+			}
+		});
 		btnCancelar.setBackground(new Color(255, 0, 0));
 		btnCancelar.setForeground(new Color(255, 255, 255));
 		btnCancelar.setFont(new Font("Tahoma", Font.BOLD, 13));
@@ -123,6 +152,22 @@ public class RegistroPedido extends JFrame {
 		layeredPane.add(btnCancelar);
 		
 		JButton btnRegistrar = new JButton("REGISTRAR");
+		btnRegistrar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				codigo_registro = (int)(Math.random()*1000000);
+				codig_material = tfCodigoMaterial.getText();
+				codigo_usuario = tfUsuario.getText();
+				fecha_prestamo = dateRetiro.toString();
+				fecha_devolucion = dateDevolucion.toString();
+				
+				Modelo_Registro_Moviminentos movimientos = new Modelo_Registro_Moviminentos(codigo_registro, 
+						codig_material, codigo_usuario, fecha_prestamo, fecha_devolucion, null);
+				
+				CreadorRegistro creador = new CreadorRegistro();
+				
+				creador.Llenado(movimientos.getCodigo_registro(),movimientos.getCodigo_material(), movimientos.getCodigo_usuario(), movimientos.getFecha_prestamo(), movimientos.getFecha_devolucion());
+			}
+		});
 		btnRegistrar.setForeground(Color.WHITE);
 		btnRegistrar.setFont(new Font("Tahoma", Font.BOLD, 13));
 		btnRegistrar.setBackground(new Color(0, 0, 255));

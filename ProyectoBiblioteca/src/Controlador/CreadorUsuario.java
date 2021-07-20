@@ -57,7 +57,7 @@ public class CreadorUsuario {
 	        outputter.setFormat(Format.getPrettyFormat());
 	        outputter.output(document, writer);
 	        outputter.output(document, System.out);
-	        writer.close(); // close writer
+	        writer.close(); 
 	    } catch (IOException e) {
 	        e.printStackTrace();
 	    }

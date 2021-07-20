@@ -2,7 +2,7 @@ package Modelo;
 
 public class Modelo_Registro_Moviminentos {
 
-	private String codigo_registro;
+	private int codigo_registro;
 	private String codigo_material;
 	private String codigo_usuario;
 	private String fecha_prestamo;
@@ -10,7 +10,7 @@ public class Modelo_Registro_Moviminentos {
 	private String estado;
 	
 	
-	public Modelo_Registro_Moviminentos(String codigo_registro, String codigo_material, String codigo_usuario,
+	public Modelo_Registro_Moviminentos(int codigo_registro, String codigo_material, String codigo_usuario,
 			String fecha_prestamo, String fecha_devolucion, String estado) {
 		this.codigo_registro = codigo_registro;
 		this.codigo_material = codigo_material;
@@ -21,10 +21,10 @@ public class Modelo_Registro_Moviminentos {
 	}
 	
 	
-	public String getCodigo_registro() {
+	public int getCodigo_registro() {
 		return codigo_registro;
 	}
-	public void setCodigo_registro(String codigo_registro) {
+	public void setCodigo_registro(int codigo_registro) {
 		this.codigo_registro = codigo_registro;
 	}
 	public String getCodigo_material() {

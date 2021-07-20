@@ -55,7 +55,7 @@ public class Login extends JFrame {
 		contentPane.add(layeredPane, BorderLayout.CENTER);
 		
 		JLabel lblNewLabel = new JLabel("Ingresa Usuario");
-		lblNewLabel.setBounds(154, 33, 81, 14);
+		lblNewLabel.setBounds(154, 33, 123, 14);
 		layeredPane.add(lblNewLabel);
 		
 		textField = new JTextField();
@@ -64,7 +64,7 @@ public class Login extends JFrame {
 		layeredPane.add(textField);
 		
 		JButton btnVerificar = new JButton("Verificar");
-		btnVerificar.setBounds(82, 106, 109, 23);
+		btnVerificar.setBounds(43, 106, 148, 23);
 		layeredPane.add(btnVerificar);
 		
 		JRadioButton rbAdministrador = new JRadioButton("Administrador");
@@ -108,7 +108,7 @@ public class Login extends JFrame {
 					}
 			}
 		});
-		btnAcceder.setBounds(146, 219, 89, 23);
+		btnAcceder.setBounds(137, 219, 109, 23);
 		layeredPane.add(btnAcceder);
 		
 		JButton btnNuevoUsuario = new JButton("Nuevo Usuario");
@@ -123,7 +123,7 @@ public class Login extends JFrame {
 				}
 			}
 		});
-		btnNuevoUsuario.setBounds(201, 106, 109, 23);
+		btnNuevoUsuario.setBounds(201, 106, 140, 23);
 		layeredPane.add(btnNuevoUsuario);
 	}
 
